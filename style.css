@@ -574,6 +574,9 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .detail button{
+    margin-left: 10px;
+  }
 }
 @media (max-width: 426px) {
   .about-container {
@@ -589,6 +592,9 @@
     margin-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .detail button{
+    margin-left: 15px;
   }
 }
 @media (max-width: 376px) {
