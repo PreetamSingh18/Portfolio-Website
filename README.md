@@ -26,7 +26,9 @@ https://preetamsingh18.github.io/Portfolio-Website/
 
 **JAVASCRIPTS** 
 
-**Some other Tech Stack :** ParticleJS ,EmailJS
+**Git/Github** 
+
+**Library :**  ParticleJS ,EmailJS
 
 
 
