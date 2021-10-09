@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
-@import url("http://fonts.cdnfonts.com/css/kafina");
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -60,12 +60,11 @@
   font-weight: 500;
   padding: 4px 10px;
   border-radius: 10px;
-  transition:  0.3s ease;
+  transition: 0.3s ease;
 }
 .navbar .menu li a:hover {
   color: #1b1b1b;
   background: #fff;
-
 }
 .navbar.sticky .menu li a:hover {
   color: #1b1b1b;
@@ -156,19 +155,16 @@
   .navbar .menu li a:hover {
     color: #27deeb;
     background: none;
-  
   }
 }
 @media (max-width: 728px) {
   .navbar .menu li a {
     margin: 43px 0;
-    
   }
- } 
-@media (max-width: 540px){
+}
+@media (max-width: 540px) {
   .navbar .menu li a {
     margin: 35px 0;
-    
   }
 }
 
@@ -425,12 +421,12 @@
 }
 .detail h3 {
   font-size: 3em;
-  font-family: "kafina", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
   filter: brightness(95%);
 }
 .detail h3 span {
-  font-family: "kafina", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.6em;
   color: #27deeb;
 }
@@ -546,6 +542,9 @@
   .about-head {
     margin-bottom: 80px;
   }
+  .detail button {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 541px) {
   .about-container {
@@ -588,7 +587,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .detail button{
+  .detail button {
     margin-left: 10px;
   }
 }
@@ -607,13 +606,13 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .detail button{
+  .detail button {
     margin-left: 15px;
   }
 }
 @media (max-width: 376px) {
   .about-container {
-    height: 135vh;
+    height: 120vh;
   }
 
   .myimage img {
@@ -621,8 +620,35 @@
     width: 190px;
   }
   .detail p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 5px;
+    letter-spacing: 0.7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 325px) {
+  .about-container {
+    height: 150vh;
+  }
+
+  .about-content {
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+  }
+
+  .myimage {
+    margin-bottom: -50px;
+  }
+  .myimage img {
+    height: 190px;
+    width: 190px;
+  }
+  .detail p {
+    font-size: 1rem;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -698,12 +724,12 @@
   padding: 10px;
   margin-left: 30px;
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   transform: rotate(180deg);
   letter-spacing: 1.5px;
   word-spacing: 2px;
-  font-family: "kafina", sans-serif;
-  font-weight: 600;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 500;
 }
 .carousel-cell .skills-logo {
   width: 80%;
@@ -1091,22 +1117,29 @@
     transition: 0.3s ease;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 325px) {
   .project-container {
-    height: 170vh;
+    height: 180vh;
   }
   .project-area {
-    height: 90%;
-    margin-top: 100px;
+    height: auto;
   }
 
   .project-card1,
   .project-card2,
   .project-card3,
   .project-card4 {
-    height: 205px;
-    width: 80%;
+    height: 180px;
+    width: 85%;
+    margin: 20px 0 10px 0;
   }
+  /* .project-card1,
+  .project-card2,
+  .project-card3,
+  .project-card4{
+    margin-top: 0px;
+    
+  }   */
   .project-card1 .imagebox,
   .project-card2 .imagebox,
   .project-card3 .imagebox,
@@ -1167,7 +1200,7 @@
   margin-left: 20px;
   color: #2eeffd;
   font-weight: 300;
-  font-family: "kafina", sans-serif;
+  font-family: 'Crete Round', serif;
 }
 .social .social-content {
   padding: 10px;
@@ -1218,7 +1251,7 @@
   color: rgb(253, 219, 219);
   font-size: 20px;
   font-weight: 100;
-  font-family: "kafina", sans-serif;
+  font-family: 'Crete Round', serif;
   letter-spacing: 1.3px;
   margin: -10px;
   margin-bottom: 10px;
@@ -1377,7 +1410,7 @@ textarea {
   }
 
   .Message-head h3 {
-    font-family: "kafina", sans-serif;
+    font-family: "Ubantu", sans-serif;
     margin: 0 0 15px 0;
     position: relative;
   }
@@ -1386,7 +1419,7 @@ textarea {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 6%;
+    bottom: -8%;
     transform: translate(-50%, -50%);
     background-color: #27deeb;
     width: 100%;
@@ -1453,6 +1486,9 @@ textarea {
 }
 
 @media (max-width: 450px) {
+  .contact-container {
+    height: auto;
+  }
   .Message {
     width: 90%;
     height: 100%;
