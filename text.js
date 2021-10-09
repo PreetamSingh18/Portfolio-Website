@@ -96,6 +96,7 @@ $(".main-carousel").flickity({
   freeScroll: true,
   wrapAround: true,
   autoPlay: true,
+  prevNextButtons: false,
 });
 
 //-------script for carousel  Ends ----
@@ -118,77 +119,27 @@ new TypeIt("#type1", {
 
 
 
-function sendmail() {
 
-  var name = $('#Name').val();
-  var email = $('#Sender').val();
-  var message = $('#Message').val();
+document
+  .getElementById("Contact_Form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  // var body = $('#body').val();
-
-  var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message;
-
-  Email.send({
-    SecureToken:"c3068614-a556-4cf8-b761-9eb4e77a9cb7",
-    To: 'spreetam2001@gmail.com',
-    From: "preetamportfolio@gmail.com",
-    Subject: "New message on contact from " + name,
-    Body: Body
-  }).then(
-    message => {
-      //console.log (message);
-      if (message == 'OK') {
-        alert('Your mail has been send. Thank you for connecting.');
+    const serviceID = "service_4et6qet";
+    const templateID = "template_qbmwbao";
+    emailjs.sendForm(serviceID, templateID, this).then(
+      (res) => {
+        console.log("success", res.status);
+        alert("your message sent successfully..");
+      },
+      (err) => {
+        console.log(JSON.stringify(err));
       }
-      else {
-        console.error(message);
-        alert('Message Sent.. ')
-
-      }
-
-    }
-  );
-
-
-}
-
-
-// document
-//   .getElementById("Contact_Form")
-//   .addEventListener("submit", function (e) {
-//     e.preventDefault();
-
-//     const serviceID = "service_zl90qvg";
-//     const templateID = "template_qhypra6";
-//     // const data = {
-//     //   from_name: document.getElementById("from_name").value,
-//     //   email: document.getElementById("email").value,
-//     //   message: document.getElementById("message").value,
-//     // };
-
-//     emailjs.sendForm(serviceID, templateID, this).then(
-//       (res) => {
-//         console.log("success", res.status);
-//       },
-//       (err) => {
-//         console.log(JSON.stringify(err));
-//       }
-//     );
-//     document.getElementById("message").value = "";
-//     document.getElementById("email").value = "";
-//     document.getElementById("from_name").value = "";
-//   });
-
-
-
-
-
-
-
-
-
-
-
+    );
+    document.getElementById("message").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("from_name").value = "";
+  });
 
 
 
