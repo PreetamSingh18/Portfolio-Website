@@ -593,9 +593,11 @@
 }
 @media (max-width: 426px) {
   .about-container {
-    height: 130vh;
+    height: 135vh;
   }
-
+  .about-content {
+    height: 80%;
+  }
   .myimage img {
     height: 200px;
     width: 200px;
@@ -611,9 +613,6 @@
   }
 }
 @media (max-width: 376px) {
-  .about-container {
-    height: 120vh;
-  }
 
   .myimage img {
     height: 190px;
@@ -629,7 +628,7 @@
 }
 @media (max-width: 325px) {
   .about-container {
-    height: 150vh;
+    height: 155vh;
   }
 
   .about-content {
@@ -648,7 +647,6 @@
   .detail p {
     font-size: 1rem;
     margin-top: 5px;
-    letter-spacing: 0.5px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1585,6 +1583,9 @@ textarea {
 }
 
 @media (max-width: 380px) {
+  .contact-container {
+    height: 70vh;
+  }
   .Message {
     width: 80%;
     height: 100%;
@@ -1630,8 +1631,9 @@ textarea {
 
 @media (max-width: 325px) {
   .Message {
+    margin-top: -120px;
     width: 90%;
-    height: 100%;
+    height: 80%;
     z-index: 1;
   }
 
